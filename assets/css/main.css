@@ -13,8 +13,9 @@ body {
     padding: 0;
     font-size: 100%;
     line-height: 1.5;
-    color: #555;
+    color: #000;
     font-family: 'Nunito Sans', sans-serif
+
 }
 
 article,
@@ -4821,11 +4822,11 @@ a img {
 }
 
 #particles-js {
-    background: #1488CC;
+    background: #2b0cd8;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    background: -webkit-linear-gradient(to right, #2B32B2, #101111);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC);
+    background: linear-gradient(to right, #2B32B2, #151616);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     display: flex;
@@ -4835,6 +4836,7 @@ a img {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed
+    
 }
 
 #particles-js .particles-js-canvas-el {
@@ -4926,7 +4928,7 @@ a img {
 
 .header-icons .icon:active,
 .header-icons .icon:hover {
-    color: #1488CC;
+    color: #0d0303;
     background: #fff
 }
 
@@ -4983,7 +4985,10 @@ a img {
 }
 
 .tech {
-    margin: 10px
+    margin: 10px;
+    text-align: center;
+    justify-content: center;    
+
 }
 
 .user {
@@ -5012,6 +5017,7 @@ a img {
 }
 
 #projects {
+    text-justify: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -5033,7 +5039,9 @@ a img {
 .user-projects img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: inset;
 }
 
 .user-projects h5 {
