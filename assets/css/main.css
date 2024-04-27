@@ -4988,8 +4988,8 @@ a img {
     margin: 10px;
     text-align: center;
     justify-content: center;
-    height: 30%;
-    width: 30%;
+    height: 25%;
+    width: 25%;
 }
 .tech h1, .tech h2, .tech h3, .tech h4, .tech h5, .tech h6 {
     color: var(--tech-heading-color, #4b5664);
@@ -5013,7 +5013,7 @@ a img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 /* 
 .tech h1, .tech h2, .tech h3, .tech h4, .tech h5, .tech h6 {
@@ -5280,7 +5280,7 @@ a img {
     line-height: 1.6;
     text-align: justify;
   }
-  
+
   .heading {
     text-align: center;
     font-size: 1.0em; /* Adjusted font size */
