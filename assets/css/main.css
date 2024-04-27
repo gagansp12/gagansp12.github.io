@@ -5297,14 +5297,24 @@ a img {
 
 
   .parent {
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2px; /* Reduced the gap between child elements */
   }
-  
+
+  .parent .child {
+    transition: transform 0.3s ease-in-out; /* Added transition for hover effect */
+  }
+
+  .parent .child:hover {
+    transform: scale(1.05); /* Added hover effect for each child */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added box shadow for hover effect */
+  }
   .child {
-    flex: 1;
+    flex: 2;
     margin: 10px;
-    border: 2px solid #0056b3;
+    border: 1px solid #0056b3;
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -5316,11 +5326,14 @@ a img {
   .child img {
     display: inline-block;
     margin: 0 auto; /* Center align image */
+    image-rendering: crisp-edges; /* Improve image clarity */
   }
   .left {
-    margin-right: 20px;
+    margin-right: 10px;
   }
   
   .right {
-    margin-left: 20px;
+    margin-left: 10px;
   }
+
+  
